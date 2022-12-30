@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!------------------------------------------------------CSS ---------------------------------- ----------------->
+    <link rel="stylesheet" href="style2.css" />
+
+    <!-------------------------------------------------------ICONS ---------------------------------- ----------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/cfb10a8571.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!----------Back to top button ---- -->
+    <div class="btn-back_to_top" style="visibility: visible"></div>
+
+    <!--------------------------------------------------------------header--------- ----------------------------->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h2 class="logo">Portf<span class="span-main">olio</span></h2>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <p class="p-main">
+              <a
+                href="https://linktr.ee/suziemugikuyu"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button class="tweet-button">
+                  <b>LinkTree <i class="fa fa-tree"></i></b></button
+              ></a>
+            </p>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Computer Repairer.</p>
+          <h1>
+            Hi, I am <span class="span-3">Wathika,</span><br />
+            a student from JKUAT.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------------------------about----------------------------------------------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="fa.png" />
+          </div>
+          <div class="about-col-2">
+            <h4 class="sub">About Me</h4>
+            <p>
+              A student pursuing Bsc. Public Administration in JKUAT, currently
+              in my final year of study. I also work part-time at Afya Zuri
+              clinic located in JUja, opposite Hotel. I am passionate on Web and
+              Mobile Apps Development as well as UI/UX designs. I am currently
+              studying at PLP Academy, which offers free scholarships for my
+              certificate in Web Development. I shall soon be taking Software
+              Engineering classes, as from next year, 2023, under ALX Africa.
+              After my certifications, I shall be freelancing and contributing
+              to open-source projects as well as advancing my skills in the
+              full-stack development field. <br />
+              <br />
+            </p>
+            <p>
+              I also repair PC's and do software installation, licesing as well
+              as advanced troubleshooting. Besides studying and working in Juja,
+              I also reside there.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Developer</span><br />Designing web front-end using
+                  HTML5,CSS and JavaScript.
+                  <br />
+                  <br />
+                </li>
+                <li>
+                  <span>App Development</span><br />Creating Web Apps using Vue
+                  JS and Mobile Apps using Dart with Flutter. <br />
+                  <br />
+                </li>
+
+                <li>
+                  <span>Computer Tech.</span><br />Repairing broken/dead PCs and
+                  perfoming maintainance services. <br />
+                  <br />
+                </li>
+                <li>
+                  <span>CyberSecurity</span><br />CISCO certification in basic
+                  CyberSecurity.<br />
+                  <br />
+                </li>
+                <li>
+                  <span>CCNA</span><br />Cisco Certified Network Associate
+                  Routing and Switching with Network Administration. <br />
+                  <br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2022-Date</span><br />Web Development course at PLP
+                  Academy.<br /><br />
+                </li>
+                <li></li>
+                <li>
+                  <span>2021-2021</span><br />
+                  2 months course at JKUATES on CompTIA A+ certification.
+                  <br /><br />
+                </li>
+                <li>
+                  <span>2020-date</span><br />Bsc. Public Administration at
+                  JKUAT <br /><br />
+                </li>
+                <li>
+                  <span>2016-2019</span><br />KCSE certificate<br /><br />
+                </li>
+                <li>
+                  <span>2007-2015</span><br />
+                  KCPE certificate
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>Intern at Foreign Affairs Kenya</span><br />4 months
+                  internship in the Administration Directorate.<br />
+                  <br />
+                </li>
+                <li>
+                  <span>IEBC clerk</span><br />
+                  Assited in carrying out the 2022 General elections as well as
+                  ensuring that all electors are treated impartially and with
+                  respect.
+                  <br /><br />
+                </li>
+                <li>
+                  <span>Computer Technologist</span><br />Repairing broken/dead
+                  PCs. <br /><br />
+                </li>
+                <li>
+                  <span>FreeLancer</span><br />Been freelancing up to present,it
+                  exposes to new challenges from different clients leading to
+                  skill development.
+                  <a
+                    class="git"
+                    href="https://github.com/wathika-eng"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Connect with me on Github</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------services--------------------------------------------------->
+    <div id="services">
+      <div class="container">
+        <div class="sub">
+          <h4>My Services</h4>
+
+          <div class="services-list">
+            <div>
+              <i class="fa-brands fa-google"></i>
+              <h4>Web Design</h4>
+              <p>
+                Designing beautiful, responsive and creative websites which are
+                fast and have accessibility features enabled.
+              </p>
+              <a class="git" href="#">Learn more here</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-computer"></i>
+              <h4>Computer Maintainance</h4>
+              <p>
+                Installing, new/updated software, licensing and Antivirus
+                solutions to keep you and your PC protected.
+              </p>
+              <a class="git" href="#">Learn more here</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-wifi"></i>
+              <h4>WiFi Installation</h4>
+              <p>
+                Installing, testing, and maintaining wireless/wired internet
+                equipments.
+              </p>
+              <a class="git" href="#">Learn more here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------------portfolio---------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>This is a cloned Spotify which has Kikuyu songs and mixes.</p>
+              <p>Download it here</p>
+              <a href="">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>This is a cloned Spotify which has Kikuyu songs and mixes.</p>
+              <p>Download it here</p>
+              <a href="">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>This is a cloned Spotify which has Kikuyu songs and mixes.</p>
+              <p>Download it here</p>
+              <a href="">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="#">See more</a>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------Contact------------------------------------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h3 class="sub">Contact Me</h3>
+            <p><i class="fa-solid fa-phone-volume"></i>0743074451</p>
+            <p>
+              <i class="fa-regular fa-paper-plane"></i
+              >susanwaithirawangechi@gmail.com
+            </p>
+            <div class="social-icons">
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://twitter.com/suziemugikuyu"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-square-twitter"></i>
+              </a>
+              <a
+                href="https://github.com/wathika-eng"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-github"></i>
+              </a>
+              <a href="" target="_blank" rel="noopener noreferrer"
+                ><i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCswKPfrtBU0Z28iCBZrK-lQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+            <a href="" class="btn btn2">Download my CV</a>
+            <a href="" class="btn btn2"
+              >Back to top <i class="fa-solid fa-arrow-up"></i
+            ></a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="number"
+                name="phone number"
+                placeholder="Your Phone Number"
+                required
+              />
+              <input type="email" name="Email" placeholder="Your E-mail" />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button type="submit" class="btn btn3">Submit</button>
+              <button type="reset" class="btn btn3">
+                Clear All
+                <i class="fa-sharp fa-solid fa-triangle-exclamation"></i>
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . | All right reserved. | Made by Wathika
+        </p>
+      </div>
+    </div>
+
+    <!----------------------------------------------------Javascript--------------------------------->
+
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
