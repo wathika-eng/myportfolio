@@ -566,6 +566,14 @@ nav .fas {
 
     }
 
+     #preloader {
+        background: #000 url(BackIllinformedAsianelephant-size_restricted.gif) no-repeat center center;
+        background-size: 30;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+    }
     .header-text h1 {
         font-size: 30px;
     }
