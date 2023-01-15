@@ -511,9 +511,9 @@ form .btn3 {
     /* Hidden by default */
     position: fixed;
     /* Fixed/sticky position */
-    bottom: 20px;
+    bottom: 30px;
     /* Place the button at the bottom of the page */
-    right: 30px;
+    right: 10px;
     /* Place the button 30px from the right */
     z-index: 99;
     /* Make sure it does not overlap */
@@ -529,7 +529,7 @@ form .btn3 {
     /* Add a mouse pointer on hover */
     padding: 10px;
     /* Some padding */
-    border-radius: 100px;
+    border-radius: 150px;
     /* Rounded corners */
     font-size: 20px;
 }
@@ -555,7 +555,7 @@ nav .fas {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     #header {
         background-image: url(phone-background.png);
     }
@@ -637,14 +637,17 @@ nav .fas {
 
     #myBtn {
         flex-basis: 100%;
-
+margin-bottom: 10px;
+display: flex;
+flex-wrap: wrap;   
+bottom: 30px; 
     }
 }
 
 #msg {
     font-weight: 700;
-    font-size: 12px;
+    font-size: 22px;
     color: #c90404;
-    margin: -10px;
-    display: block;
+    margin: 10px;
+    display: inline-block;
 }
