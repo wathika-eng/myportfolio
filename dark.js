@@ -1,10 +1,6 @@
-var dark = document.getElementById("dark");
-
-dark.onclick = function(){
-    document.body.classList.toggle("dark-theme");
-if(document.body.classList.contains("dark-theme")){
-    icon.src = <i class="fa-solid fa-sun"></i>;
-}else{
-    icon.src = <i id="dark" class="fa-solid fa-moon"></i>
-}
+function myFunction (){
+    
+document.querySelector(".fa-sun").classList.toggle("animate-sun");
+document.querySelector(".fa-moon").classList.toggle("animate-moon");
+document.querySelector("body").classList.toggle("dark-mode");
 }

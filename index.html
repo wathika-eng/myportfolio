@@ -7,6 +7,10 @@
     <!------------------------------------------------------CSS ---------------------------------- ----------------->
     <link rel="stylesheet" href="style2.css" />
 
+<!-----------------------------fonts-------------------------------------------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <!-------------------------------------------------------ICONS ---------------------------------- ----------------->
     <link
       rel="stylesheet"
@@ -21,7 +25,7 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
 
-   
+<!--------------------favicon-------------------------------------------------------------->  
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -57,10 +61,12 @@
                   <b>LinkTree <i class="fa fa-tree"></i></b></button
               ></a>
             </p>
-            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            <i style="font-size: 22px;" class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
-          <i id="dark" class="fa-solid fa-moon"></i>
-          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+          <i  onclick="myFunction()" class="fas fa-sun"></i>
+          <i id="dark"  onclick="myFunction()" class="fa-solid fa-moon"></i>
+
+          <i style="font-size: 22px;" class="fas fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Computer Repairer.</p>
@@ -78,7 +84,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="fa.png" />
+            <img src="coding-g3ea72b0d2_1280.png" />
           </div>
           <div class="about-col-2">
             <h4 class="sub">About Me</h4>
@@ -93,7 +99,7 @@
               After my certifications, I shall be freelancing and contributing
               to open-source projects as well as advancing my skills in the
               full-stack development field. <br />
-              <br />
+              
             </p>
             <p>
               I also repair PC's and do software installation, licesing as well
@@ -115,29 +121,29 @@
                 <li>
                   <span>Web Developer</span><br />Designing web front-end using
                   HTML5,CSS and JavaScript.
-                  <br />
+                  
                   <br />
                 </li>
                 <li>
                   <span>App Development</span><br />Creating Web Apps using Vue
                   JS and Mobile Apps using Dart with Flutter. <br />
-                  <br />
+                  
                 </li>
 
                 <li>
                   <span>Computer Tech.</span><br />Repairing broken/dead PCs and
                   perfoming maintainance services. <br />
-                  <br />
+                  
                 </li>
                 <li>
                   <span>CyberSecurity</span><br />CISCO certification in basic
                   CyberSecurity.<br />
-                  <br />
+                  
                 </li>
                 <li>
                   <span>CCNA</span><br />Cisco Certified Network Associate
                   Routing and Switching with Network Administration. <br />
-                  <br />
+                  
                 </li>
               </ul>
             </div>
@@ -145,20 +151,20 @@
               <ul>
                 <li>
                   <span>2022-Date</span><br />Web Development course at PLP
-                  Academy.<br /><br />
+                  Academy.<br />
                 </li>
                 <li></li>
                 <li>
                   <span>2021-2021</span><br />
                   2 months course at JKUATES on CompTIA A+ certification.
-                  <br /><br />
+                  <br />
                 </li>
                 <li>
                   <span>2020-date</span><br />Bsc. Public Administration at
-                  JKUAT <br /><br />
+                  JKUAT <br />
                 </li>
                 <li>
-                  <span>2016-2019</span><br />KCSE certificate<br /><br />
+                  <span>2016-2019</span><br />KCSE certificate<br />
                 </li>
                 <li>
                   <span>2007-2015</span><br />
@@ -170,7 +176,7 @@
               <ul>
                 <li>
                   <span>Intern at Foreign Affairs Kenya</span><br />4 months
-                  internship in the Administration Directorate.<br />
+                  internship in the Administration Directorate.
                   <br />
                 </li>
                 <li>
@@ -178,11 +184,11 @@
                   Assited in carrying out the 2022 General elections as well as
                   ensuring that all electors are treated impartially and with
                   respect.
-                  <br /><br />
+                  <br />
                 </li>
                 <li>
                   <span>Computer Technologist</span><br />Repairing broken/dead
-                  PCs. <br /><br />
+                  PCs. <br />
                 </li>
                 <li>
                   <span>FreeLancer</span><br />Been freelancing up to present,it
@@ -193,6 +199,7 @@
                     href="https://github.com/wathika-eng"
                     target="_blank"
                     rel="noopener noreferrer"
+                    style="transform: scale(1);"
                     >Connect with me on Github</a
                   >
                 </li>
@@ -293,11 +300,11 @@
               <i class="fa-regular fa-paper-plane"></i
               >wathika02@gmail.com
             </p>
-            <div class="social-icons">
+            <div  class="social-icons">
               <a href="" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin"></i
               ></a>
-              <a
+              <a style="font-size: 65px;"
                 href="https://twitter.com/suziemugikuyu"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -369,34 +376,16 @@
     <script src="form.js"></script>
     <script src="dark.js"></script>
     <script src="top.js"></script>
-   
-   <script>
-    const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-   </script>
-   
+    <script src="swiper.js" ></script>
     <script>
       alert("Still Under-Development!");
     </script>
+    <!------------choose default theme-------------------------------------->
+    <script>
+      var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+console.log("matched");
+    </script>
     <script src="load.js"></script>
+    <script src="dark.js"></script>
   </body>
 </html>
