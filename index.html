@@ -10,33 +10,35 @@
 <!-----------------------------fonts-------------------------------------------------------------------->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+<link prefetch href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <!-------------------------------------------------------ICONS ---------------------------------- ----------------->
-    <link
+    <link 
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script
+    <script 
       src="https://kit.fontawesome.com/cfb10a8571.js"
       crossorigin="anonymous"
     ></script>
-   <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+   <link defer
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
 
 <!--------------------favicon-------------------------------------------------------------->  
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest"><title>Personal Portfolio</title>
+    <link rel="manifest" href="site.webmanifest">
+    <title>Personal Portfolio</title>
     <!---------------------------------------Start---------------------------------->
     
     
-    
+  <script async>navigator.serviceWorker.register("service-worker.js")</script> 
+  <link rel="manifest" href="manifest2.json" />  
   </head>
-  <body>
+  <body preload>
     <div id="preloader"></div>
     <!----------Back to top button ---- -->
     <div class="btn-back_to_top" style="visibility: visible"></div>
@@ -84,7 +86,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="coding-g3ea72b0d2_1280.png" />
+            <img src="coding-g3ea72b0d2_1280 (1).webp" />
           </div>
           <div class="about-col-2">
             <h4 class="sub">About Me</h4>
@@ -253,7 +255,7 @@
         <h1 class="sub">My Work</h1>
         <div class="work-list">
           <div class="work">
-            <img src="work-1.png" />
+            <img src="work-1.webp" />
             <div class="layer">
               <h3>Music App</h3>
               <p>This is a cloned Spotify which has Kikuyu songs and mixes.</p>
@@ -264,7 +266,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="work-2.png" />
+            <img src="work-2.webp" />
             <div class="layer">
               <h3>Music App</h3>
               <p>This is a cloned Spotify which has Kikuyu songs and mixes.</p>
@@ -275,7 +277,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="work-3.png" />
+            <img src="work-3.webp" />
             <div class="layer">
               <h3>Music App</h3>
               <p>This is a cloned Spotify which has Kikuyu songs and mixes.</p>
@@ -371,12 +373,12 @@
 
     <!----------------------------------------------------Javascript--------------------------------->
 
-    <script src="main.js"></script>
-    <script src="menu.js"></script>
-    <script src="form.js"></script>
-    <script src="dark.js"></script>
-    <script src="top.js"></script>
-    <script src="swiper.js" ></script>
+    <script async src="main.js"></script>
+    <script async src="menu.js"></script>
+    <script defer src="form.js"></script>
+    <script defer src="dark.js"></script>
+    <script  defer src="top.js"></script>
+    <script defer src="swiper.js" ></script>
     <script>
       alert("Still Under-Development!");
     </script>
@@ -385,7 +387,7 @@
       var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 console.log("matched");
     </script>
-    <script src="load.js"></script>
-    <script src="dark.js"></script>
+    <script async src="load.js"></script>
+    <script defer src="dark.js"></script>
   </body>
 </html>
