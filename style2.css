@@ -75,7 +75,7 @@ background-color: rgba(24, 1, 80, 0.8);
 
 /*-----------------------Loading page---------------------------------------------------*/
 #preloader {
-    background: #000 url(BackIllinformedAsianelephant-size_restricted.webp) no-repeat center center;
+    background: #000 url(/BackIllinformedAsianelephant-size_restricted.webp) no-repeat center center;
     background-size: 30%;
     position: fixed;
     width: 100%;
