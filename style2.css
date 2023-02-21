@@ -603,15 +603,18 @@ nav .fas {
     display: none;
 }
 
-@media only screen and (max-width: 750px) {
-    #header {
-       inherits: ;
+@media only screen and (max-width: 746px) {
+    
+    .header{
+        margin-top: -50%;
     }
-
     .header-text {
-        margin-top: 100%;
+        margin-top: 50%;
         font-size: 16px;
 
+    }
+    .about-col-1 img{
+        margin-top: -20%;
     }
 
      #preloader {
@@ -667,7 +670,7 @@ nav ul li {
         margin-bottom: 30px;
     }
 
-    .about-col-2 {}
+   
 
     .tab-links {
 
